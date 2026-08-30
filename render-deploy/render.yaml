@@ -1,0 +1,13 @@
+# Render Blueprint 部署配置（免费 Tier）
+# 用法：推到 GitHub 仓库后，在 Render 控制台 New → Blueprint 选择该仓库，自动创建服务
+services:
+  - type: web
+    name: yizhaoxi            # 公网地址即 https://yizhaoxi.onrender.com（若重名请改）
+    runtime: node
+    buildCommand: ""          # 零依赖，无需 npm install
+    startCommand: node server.js
+    envVars:
+      - key: NODE_VERSION
+        value: "20"
+      # PORT 由 Render 自动注入（server.js 用 process.env.PORT 读取，禁止硬编码，无需手动配置）
+      # 可选：若想让 server.js 代理智谱 AI，再配 ZHIPU_API_KEY（默认已内置，可不配）

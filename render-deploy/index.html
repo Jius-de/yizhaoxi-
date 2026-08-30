@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#1A365D" />
+  <meta name="description" content="Yi-朝夕刷题 - 个人学习工作台（刷题/学习/AI/同步）" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="朝夕刷题" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="apple-touch-icon" href="icons/icon-192.png" />
+  <link rel="icon" type="image/png" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Yi-朝夕刷题</title>
+</head>
+<body>
+  <div id="app">
+    <header class="topbar" id="topbar">
+      <div class="title">Yi-朝夕刷题</div>
+    </header>
+    <main class="page active" id="page"></main>
+    <nav class="bottom-nav" id="bottom-nav"></nav>
+  </div>
+
+  <div id="toast"></div>
+
+  <div class="modal-mask" id="modal-mask">
+    <div class="modal">
+      <h4 id="modal-title">提示</h4>
+      <div class="m-body" id="modal-body"></div>
+      <div class="m-actions" id="modal-actions"></div>
+    </div>
+  </div>
+
+  <div class="ai-popup-mask" id="ai-popup"></div>
+
+  <script src="js/data-meta.js"></script>
+  <script src="js/data-c.js"></script>
+  <script src="js/data-python.js"></script>
+  <script src="js/data-xingce.js"></script>
+  <script src="js/data-sql.js"></script>
+  <script src="js/data-linux.js"></script>
+  <script src="js/data-net.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/sync.js"></script>
+  <script src="js/ai.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
